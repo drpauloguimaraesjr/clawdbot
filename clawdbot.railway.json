@@ -1,0 +1,60 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openai/codex-mini-latest"
+      },
+      "models": {
+        "openai/codex-mini-latest": {}
+      },
+      "workspace": "/app/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "hooks": {
+    "enabled": false
+  },
+  "channels": {
+    "whatsapp": {
+      "configWrites": true,
+      "dmPolicy": "allowlist",
+      "selfChatMode": true,
+      "allowFrom": [
+        "+5547992567770"
+      ],
+      "groupPolicy": "allowlist",
+      "mediaMaxMb": 50
+    }
+  },
+  "gateway": {
+    "mode": "remote",
+    "bind": "all",
+    "auth": {
+      "mode": "token"
+    },
+    "tailscale": {
+      "mode": "off"
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "pnpm"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "whatsapp": {
+        "enabled": true
+      }
+    }
+  }
+}
