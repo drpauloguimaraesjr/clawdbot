@@ -33,6 +33,10 @@
       ],
       "groupPolicy": "allowlist",
       "mediaMaxMb": 50
+    },
+    "telegram": {
+      "dmPolicy": "allowlist",
+      "allowFrom": []
     }
   },
   "gateway": {
@@ -54,6 +58,9 @@
   "plugins": {
     "entries": {
       "whatsapp": {
+        "enabled": true
+      },
+      "telegram": {
         "enabled": true
       }
     }
