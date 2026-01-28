@@ -36,7 +36,7 @@
     }
   },
   "gateway": {
-    "mode": "remote",
+    "mode": "local",
     "port": 8080,
     "auth": {
       "mode": "token"
