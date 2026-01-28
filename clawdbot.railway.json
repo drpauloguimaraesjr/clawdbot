@@ -44,7 +44,7 @@
     "port": 8080,
     "trustedProxies": ["*"],
     "auth": {
-      "mode": "open"
+      "mode": "token"
     },
     "tailscale": {
       "mode": "off"
