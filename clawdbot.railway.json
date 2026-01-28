@@ -38,6 +38,8 @@
   "gateway": {
     "mode": "local",
     "port": 8080,
+    "trustedProxies": ["*"],
+    "skipPairing": true,
     "auth": {
       "mode": "token"
     },
