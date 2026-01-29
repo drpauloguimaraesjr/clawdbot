@@ -2,10 +2,10 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openai/codex-mini-latest"
+        "primary": "openai/gpt-4o"
       },
       "models": {
-        "openai/codex-mini-latest": {}
+        "openai/gpt-4o": {}
       },
       "workspace": "/tmp/workspace",
       "compaction": {
