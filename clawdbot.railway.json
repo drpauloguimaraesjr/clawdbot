@@ -35,7 +35,8 @@
       "mediaMaxMb": 50
     },
     "telegram": {
-      "dmPolicy": "allow"
+      "dmPolicy": "allowlist",
+      "allowFrom": ["577858261"]
     }
   },
   "gateway": {
